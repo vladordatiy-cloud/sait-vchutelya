@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Перемикачі та глобальні змінні — Ордатія Владислава</title>
+<meta name="description" content="Матеріали уроку інформатики для 8 класу: використання перемикачів, глобальні змінні.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  pre.code{background:#1f2224;color:#eef0f3;border:1px solid var(--line);border-radius:10px;padding:1rem 1.2rem;overflow-x:auto;font:.92rem/1.55 Consolas,"Courier New",monospace;margin:1rem 0}
+  code{font-family:Consolas,"Courier New",monospace;background:rgba(255,255,255,.12);padding:0 .3em;border-radius:4px}
+  pre.code code{background:none;padding:0}
+  .lvl{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:1rem;overflow:hidden}
+  .lvl summary{cursor:pointer;padding:1.1rem 1.4rem;font-family:var(--serif);font-weight:600;font-size:1.2rem}
+  .lvl > div{padding:0 1.4rem 1.2rem;border-top:1px solid var(--line)}
+  .lvl p{margin-top:1rem;color:var(--mute)}
+  .embed{border:1px dashed var(--line);border-radius:14px;padding:1.5rem;color:var(--mute)}
+  .embed iframe{width:100%;min-height:420px;border:0;border-radius:10px}
+  .rows li.two{grid-template-columns:1fr}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Ордатія Владислава</a>
+    <nav id="menu" aria-label="Головне меню"><ul><li><a href="index.html">Головна</a></li><li><a href="materials.html" aria-current="page">Матеріали</a></li><li><a href="homework.html">Домашні завдання</a></li><li><a href="tests.html">Тести</a></li><li><a href="links.html">Посилання</a></li><li><a href="contacts.html">Контакти</a></li></ul></nav>
+    <button class="burger" aria-expanded="false" aria-controls="menu">Меню</button>
+  </div>
+</header>
+<main>
+<section class="page-head"><div class="wrap">
+  <p class="crumbs"><a href="index.html">Головна</a> / <a href="materials.html">Матеріали</a> / 8 клас</p>
+  <h1>Використання перемикачів. Глобальні змінні</h1>
+  <p class="lead">Інформатика, 8 клас. Підручник Коршунової, Завадського, с. 114–118. Проблемно-проєктний фрагмент уроку (10 хв) за модельною програмою Завадського, Коршунової.</p>
+</div></section>
+<div class="body">
+  <nav class="sub-nav" aria-label="Розділи сторінки"><a href="#slides">Презентація</a><a href="#card">Технологічна картка</a><a href="#quiz">Тест</a><a href="#tasks">Завдання</a><a href="#notes">Запам'ятай</a><a href="#safety">БЖД</a></nav>
+
+  <section class="block" id="slides">
+    <h2>Презентація до уроку</h2>
+    <p class="mat-note">12 слайдів: мета, пригадування, пояснення, приклади коду, питання, практика, підсумок.</p>
+    <div class="btns"><a class="btn accent" href="ВСТАВТЕ_ПОСИЛАННЯ_НА_GOOGLE_ПРЕЗЕНТАЦІЮ" target="_blank" rel="noopener">Відкрити презентацію →</a></div>
+  </section>
+
+  <section class="block" id="card">
+    <h2>Технологічна картка уроку</h2>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Етап</th><th>Час</th><th>Діяльність учителя</th><th>Діяльність учнів</th></tr></thead>
+      <tbody>
+        <tr><td>Проблемна ситуація</td><td>2 хв</td><td>Показує програму «лампа», де другий клік нічого не змінює</td><td>Висувають гіпотези, чому програма «забуває» стан</td></tr>
+        <tr><td>Відкриття нового</td><td>3 хв</td><td>Вводить поняття перемикача та глобальної змінної</td><td>Порівнюють два варіанти коду, формулюють правило</td></tr>
+        <tr><td>Міні-проєкт</td><td>3 хв</td><td>Видає картку рівня А / Б / В</td><td>У парах створюють «Розумний вимикач»</td></tr>
+        <tr><td>Рефлексія</td><td>2 хв</td><td>Перевіряє 1–2 розв'язки</td><td>Проходять інтерактивний тест</td></tr>
+      </tbody></table></div>
+    <div class="btns" style="margin-top:1.2rem"><a class="btn accent" href="#" target="_blank" rel="noopener">Відкрити PDF картки →</a></div>
+  </section>
+
+  <section class="block" id="quiz">
+    <h2>Перевір себе</h2>
+    <p class="mat-note">Тест із п'яти питань, близько 3 хвилин.</p>
+    <div class="embed">
+      <!-- Замініть цей рядок кодом вбудування з LearningApps (кнопка «Вбудувати») -->
+      Тест LearningApps з'явиться тут.
+    </div>
+    <div class="btns" style="margin-top:1.2rem"><a class="btn accent" href="#" target="_blank" rel="noopener">Пройти тест в окремій вкладці →</a></div>
+  </section>
+
+  <section class="block" id="tasks">
+    <h2>Завдання за рівнями</h2>
+    <details class="lvl"><summary>Рівень А (базовий)</summary><div>
+      <p>Лампа не вимикається другим кліком. Додайте один рядок, щоб програма запрацювала.</p>
+<pre class="code"><code>light = False
+
+def switch():
+    light = not light
+    print("Світло:", light)
+
+switch()
+switch()</code></pre>
+      <p>Підказка: Python створює локальну змінну, якщо не вказати, що вона глобальна.</p>
+    </div></details>
+    <details class="lvl"><summary>Рівень Б (середній)</summary><div>
+      <p>Додайте лічильник <code>count</code>, який збільшується на 1 при кожному перемиканні. Після двох викликів виведіть: <code>Перемикань: 2</code>. Лічильник теж має бути глобальною змінною.</p>
+    </div></details>
+    <details class="lvl"><summary>Рівень В (поглиблений)</summary><div>
+      <p>Створіть перемикач із трьома режимами: 0 (вимкнено), 1 (тьмяно), 2 (яскраво). Кожен виклик <code>switch()</code> переходить до наступного режиму, після 2 знову 0. Виведіть назву режиму текстом.</p>
+      <p>Підказка: використайте операцію <code>%</code> (залишок від ділення).</p>
+    </div></details>
+  </section>
+
+  <section class="block" id="notes">
+    <h2>Запам'ятай</h2>
+    <div class="cols">
+      <div class="cell"><h3>Глобальна змінна</h3><p>Оголошена поза функціями й доступна в усій програмі.</p></div>
+      <div class="cell"><h3>Локальна змінна</h3><p>Існує лише всередині функції.</p></div>
+      <div class="cell"><h3>Перемикач</h3><p>Змінна з двома станами: 0/1 або True/False.</p></div>
+      <div class="cell"><h3>Ключове слово global</h3><p>Щоб змінити глобальну змінну у функції, напишіть <code>global назва</code> на початку функції.</p></div>
+    </div>
+  </section>
+
+  <section class="block" id="safety">
+    <h2>Санітарні норми та БЖД</h2>
+    <div class="about-card">Безперервна робота за комп'ютером для 8 класу: не більше 20–25 хв. Сидіть рівно, дивіться на екран з відстані не менше 50–60 см, робіть гімнастику для очей.</div>
+    <div class="btns" style="margin-top:1.4rem"><a class="btn" href="#" target="_blank" rel="noopener">Матеріали на GitHub →</a></div>
+  </section>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Сайт вчителя інформатики: Ордатія Владислава. Створено під час педагогічної практики.</span>
+    <ul><li><a href="materials.html">Матеріали</a></li><li><a href="homework.html">Домашні завдання</a></li><li><a href="tests.html">Тести</a></li><li><a href="links.html">Посилання</a></li><li><a href="contacts.html">Контакти</a></li></ul>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
